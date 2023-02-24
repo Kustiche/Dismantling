@@ -867,6 +867,114 @@ body.lock {
   }
 }
 
+.places {
+  padding: 80px 0;
+}
+@media screen and (max-width: 768px) {
+  .places {
+    padding: 60px 0;
+  }
+}
+@media screen and (max-width: 576px) {
+  .places {
+    padding: 30px 0;
+  }
+}
+.places__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.places__title {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.places__descr--orange {
+  color: #FFC771;
+}
+.places__inner-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+}
+@media screen and (max-width: 1200px) {
+  .places__inner-cards {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+.places__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 200px;
+  min-height: 200px;
+  background-image: url(../../img/places/offices.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.8;
+  border-radius: 10px;
+}
+.places__card:nth-child(2) {
+  background-image: url(../../img/places/production.jpg);
+}
+.places__card:nth-child(3) {
+  background-image: url(../../img/places/cottages.jpg);
+}
+.places__card:nth-child(4) {
+  background-image: url(../../img/places/shopping-centers.jpg);
+}
+.places__card:nth-child(5) {
+  background-image: url(../../img/places/quarters.jpg);
+}
+.places__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  min-height: 90px;
+  background: rgba(255, 255, 255, 0.9);
+  -webkit-box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.45);
+          box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.45);
+}
+.places__excerpt {
+  font-family: "Gilroy-Bold", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+
 .modal {
   position: fixed;
   left: 0;
