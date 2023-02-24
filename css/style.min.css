@@ -728,9 +728,9 @@ body.lock {
   position: relative;
   padding-top: 140px;
   padding-bottom: 145px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.5))), url(../../img/hero/hero-background.jpg);
-  background-image: -o-linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../../img/hero/hero-background.jpg);
-  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../../img/hero/hero-background.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.5))), url(../img/hero/hero-background.jpg);
+  background-image: -o-linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../img/hero/hero-background.jpg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../img/hero/hero-background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1439,6 +1439,77 @@ body.lock {
   .steps__button {
     padding: 15px 35px;
   }
+}
+
+.benefit {
+  padding-top: 50px;
+  padding-bottom: 80px;
+}
+.benefit__container {
+  max-width: 755px;
+}
+.benefit__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.benefit__title {
+  margin-bottom: 40px;
+}
+.benefit__excerpt--orange {
+  font-family: "Gilroy-Bold", sans-serif;
+  font-weight: 700;
+  color: #FFC771;
+}
+.benefit__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+.benefit__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  max-width: 467px;
+}
+.benefit__text {
+  margin: 0;
+  margin-bottom: 30px;
+  font-family: "Gilroy-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 30px;
+}
+.benefit__button {
+  padding: 30px 75px;
+}
+.benefit__inner-img {
+  max-width: 260px;
+}
+.benefit__img {
+  width: 100%;
+  height: auto;
 }
 
 .modal {
