@@ -1,0 +1,88 @@
+.steps
+  padding-top: 75px
+  padding-bottom: 115px
+
+  &__container
+    max-width: 755px
+
+  &__wrap
+    display: flex
+    flex-direction: column
+    align-items: center
+    position: relative
+    &::after
+      position: absolute
+      content: ""
+      width: 490px
+      height: 490px
+      bottom: -109px
+      right: -300px
+      background-image: url(../../img/steps/steps-decoration.png)
+      background-repeat: no-repeat
+      background-size: cover
+      background-position: center
+
+  &__title
+    margin-bottom: 65px
+
+  &__descr
+    &--orange
+      font-family: "Gilroy-Bold", sans-serif
+      font-weight: 700
+      color: $macaroni-cheese
+
+  &__content
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    margin-bottom: 70px
+    max-width: 725px
+    width: 100%
+
+  &__card
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    margin-bottom: 50px
+    max-width: 490px
+    &:last-child
+      margin-bottom: 0
+    &--long
+      max-width: 100%
+
+  &__execrpt
+    max-width: 18px
+    width: 100%
+    font-size: 30px
+    line-height: 37px
+    margin-right: 50px
+    position: relative
+    &::after
+      position: absolute
+      content: ""
+      width: 74px
+      height: 74px
+      top: -19px
+      left: -30px
+      background-color: $cherokee
+      border-radius: 50%
+      z-index: -1
+
+  &__card-content
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+
+  &__heading
+    margin: 0
+    margin-bottom: 10px
+
+  &__text
+    margin: 0
+    font-family: "Gilroy-Regular", sans-serif
+    font-weight: 400
+    font-size: 19px
+    line-height: 23px
+
+  &__button
+    padding: 25px 65px
