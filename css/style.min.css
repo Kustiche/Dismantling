@@ -521,6 +521,7 @@ body.lock {
   font-weight: 400;
   font-size: 40px;
   line-height: 48px;
+  text-align: center;
 }
 @media screen and (max-width: 576px) {
   .title {
@@ -739,7 +740,7 @@ body.lock {
 .hero::after {
   position: absolute;
   content: "";
-  background-image: url(../../img/hero/hero-decoration-bottom.png);
+  background-image: url(../img/hero/hero-decoration-bottom.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -777,6 +778,7 @@ body.lock {
 .hero__title {
   margin: 0;
   margin-bottom: 10px;
+  text-align: inherit;
 }
 @media screen and (max-width: 768px) {
   .hero__title {
@@ -845,7 +847,7 @@ body.lock {
   content: "";
   width: 140px;
   height: 140px;
-  background-image: url(../../img/hero/hero-decoration.png);
+  background-image: url(../img/hero/hero-decoration.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -911,7 +913,6 @@ body.lock {
 }
 .places__title {
   margin-bottom: 20px;
-  text-align: center;
 }
 .places__descr--orange {
   font-family: "Gilroy-Bold", sans-serif;
@@ -951,7 +952,7 @@ body.lock {
           align-items: center;
   min-width: 200px;
   min-height: 200px;
-  background-image: url(../../img/places/offices.jpg);
+  background-image: url(../img/places/offices.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -959,16 +960,16 @@ body.lock {
   border-radius: 10px;
 }
 .places__card:nth-child(2) {
-  background-image: url(../../img/places/production.jpg);
+  background-image: url(../img/places/production.jpg);
 }
 .places__card:nth-child(3) {
-  background-image: url(../../img/places/cottages.jpg);
+  background-image: url(../img/places/cottages.jpg);
 }
 .places__card:nth-child(4) {
-  background-image: url(../../img/places/shopping-centers.jpg);
+  background-image: url(../img/places/shopping-centers.jpg);
 }
 .places__card:nth-child(5) {
-  background-image: url(../../img/places/quarters.jpg);
+  background-image: url(../img/places/quarters.jpg);
 }
 .places__content {
   display: -webkit-box;
@@ -1019,7 +1020,6 @@ body.lock {
 }
 .services__title {
   margin-bottom: 5px;
-  text-align: center;
 }
 .services__descr--orange {
   font-family: "Gilroy-Bold", sans-serif;
@@ -1141,9 +1141,9 @@ body.lock {
   padding-top: 130px;
   padding-bottom: 190px;
   position: relative;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(95, 64, 1, 0.5)), to(rgba(95, 64, 1, 0.5))), url(../../img/order/order-background.jpg);
-  background-image: -o-linear-gradient(rgba(95, 64, 1, 0.5), rgba(95, 64, 1, 0.5)), url(../../img/order/order-background.jpg);
-  background-image: linear-gradient(rgba(95, 64, 1, 0.5), rgba(95, 64, 1, 0.5)), url(../../img/order/order-background.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(95, 64, 1, 0.5)), to(rgba(95, 64, 1, 0.5))), url(../img/order/order-background.jpg);
+  background-image: -o-linear-gradient(rgba(95, 64, 1, 0.5), rgba(95, 64, 1, 0.5)), url(../img/order/order-background.jpg);
+  background-image: linear-gradient(rgba(95, 64, 1, 0.5), rgba(95, 64, 1, 0.5)), url(../img/order/order-background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1153,7 +1153,7 @@ body.lock {
   content: "";
   width: 100%;
   height: 137px;
-  background-image: url(../../img/order/order-decoration-bottom.png);
+  background-image: url(../img/order/order-decoration-bottom.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1163,7 +1163,7 @@ body.lock {
 .order::after {
   top: 0;
   height: 67px;
-  background-image: url(../../img/order/order-decoration-top.png);
+  background-image: url(../img/order/order-decoration-top.png);
   -webkit-transform: rotate(0);
       -ms-transform: rotate(0);
           transform: rotate(0);
@@ -1203,6 +1203,7 @@ body.lock {
   font-size: 30px;
   line-height: 37px;
   color: #ffffff;
+  text-align: inherit;
 }
 .order__text {
   margin: 0;
@@ -1268,7 +1269,7 @@ body.lock {
   height: 490px;
   bottom: -109px;
   right: -235px;
-  background-image: url(../../img/steps/steps-decoration.png);
+  background-image: url(../img/steps/steps-decoration.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1280,7 +1281,6 @@ body.lock {
 }
 .steps__title {
   margin-bottom: 65px;
-  text-align: center;
 }
 @media screen and (max-width: 768px) {
   .steps__title {
@@ -1445,6 +1445,12 @@ body.lock {
   padding-top: 50px;
   padding-bottom: 80px;
 }
+@media screen and (max-width: 576px) {
+  .benefit {
+    padding-top: 20px;
+    padding-bottom: 50px;
+  }
+}
 .benefit__container {
   max-width: 755px;
 }
@@ -1463,6 +1469,11 @@ body.lock {
 .benefit__title {
   margin-bottom: 40px;
 }
+@media screen and (max-width: 576px) {
+  .benefit__title {
+    margin-bottom: 20px;
+  }
+}
 .benefit__excerpt--orange {
   font-family: "Gilroy-Bold", sans-serif;
   font-weight: 700;
@@ -1479,6 +1490,14 @@ body.lock {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .benefit__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 .benefit__content {
   display: -webkit-box;
@@ -1501,11 +1520,51 @@ body.lock {
   font-size: 25px;
   line-height: 30px;
 }
+@media screen and (max-width: 768px) {
+  .benefit__text {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 576px) {
+  .benefit__text {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 26px;
+  }
+}
 .benefit__button {
   padding: 30px 75px;
 }
+@media screen and (max-width: 768px) {
+  .benefit__button {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 576px) {
+  .benefit__button {
+    padding: 20px 55px;
+  }
+}
 .benefit__inner-img {
+  line-height: 0;
   max-width: 260px;
+}
+.benefit__inner-img--mobile {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .benefit__inner-img {
+    display: none;
+  }
+  .benefit__inner-img--mobile {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .benefit__inner-img {
+    max-width: 230px;
+  }
 }
 .benefit__img {
   width: 100%;
