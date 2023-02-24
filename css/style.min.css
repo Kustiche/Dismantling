@@ -470,6 +470,7 @@ body.lock {
   font-size: 15px;
   line-height: 18px;
   color: #A8A8A8;
+  cursor: pointer;
 }
 .form__inner-button {
   position: relative;
@@ -481,6 +482,8 @@ body.lock {
   height: 100%;
   background: -o-linear-gradient(bottom, rgba(131, 93, 19, 0.36), rgba(131, 93, 19, 0.36)), -o-linear-gradient(186.19deg, #FBD293 10.32%, #FFD172 98.17%);
   background: linear-gradient(0deg, rgba(131, 93, 19, 0.36), rgba(131, 93, 19, 0.36)), linear-gradient(263.81deg, #FBD293 10.32%, #FFD172 98.17%);
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   border-radius: 10px;
   top: 3px;
   left: 0;
@@ -495,6 +498,7 @@ body.lock {
 .form__button {
   padding: 30px 55px;
   border: 0;
+  cursor: pointer;
 }
 @media screen and (max-width: 576px) {
   .form__button {
@@ -730,6 +734,19 @@ body.lock {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  position: relative;
+}
+.hero::after {
+  position: absolute;
+  content: "";
+  background-image: url(../../img/hero/hero-decoration-bottom.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 67px;
+  bottom: 0;
+  left: 0;
 }
 @media screen and (max-width: 768px) {
   .hero {
@@ -1114,6 +1131,104 @@ body.lock {
   .services__button {
     padding: 25px 80px;
   }
+}
+
+.order {
+  padding-top: 130px;
+  padding-bottom: 190px;
+  position: relative;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(95, 64, 1, 0.5)), to(rgba(95, 64, 1, 0.5))), url(../../img/order/order-background.jpg);
+  background-image: -o-linear-gradient(rgba(95, 64, 1, 0.5), rgba(95, 64, 1, 0.5)), url(../../img/order/order-background.jpg);
+  background-image: linear-gradient(rgba(95, 64, 1, 0.5), rgba(95, 64, 1, 0.5)), url(../../img/order/order-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.order::after, .order::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 137px;
+  background-image: url(../../img/order/order-decoration-bottom.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  bottom: 0;
+  left: 0;
+}
+.order::after {
+  top: 0;
+  height: 67px;
+  background-image: url(../../img/order/order-decoration-top.png);
+  -webkit-transform: rotate(0);
+      -ms-transform: rotate(0);
+          transform: rotate(0);
+}
+.order__container {
+  max-width: 1050px;
+}
+.order__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+.order__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  max-width: 400px;
+}
+.order__title {
+  margin-bottom: 20px;
+  font-family: "Gilroy-Bold", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  color: #ffffff;
+}
+.order__text {
+  margin: 0;
+  font-family: "Gilroy-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+}
+.order__form-content {
+  max-width: 400px;
+  padding: 30px 45px 55px 30px;
+  max-width: 400px;
+  background-color: white;
+  border-radius: 20px;
+  z-index: 2;
+}
+.order__heading {
+  margin-bottom: 10px;
+  font-size: 28px;
+  line-height: 35px;
+  color: #593F0D;
+}
+.order__descr {
+  margin-bottom: 35px;
+  font-family: "Gilroy-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #373737;
 }
 
 .modal {
