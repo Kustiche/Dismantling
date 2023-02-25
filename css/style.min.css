@@ -1575,17 +1575,51 @@ body.lock {
   padding-top: 50px;
   padding-bottom: 90px;
 }
+@media screen and (max-width: 576px) {
+  .working {
+    padding-top: 25px;
+    padding-bottom: 45px;
+  }
+}
 .working__container {
   max-width: 880px;
 }
 .working__wrap {
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .working__title {
   margin-bottom: 30px;
 }
+@media screen and (max-width: 576px) {
+  .working__title {
+    margin-bottom: 15px;
+  }
+}
 .working__descr--orange {
   color: #FFC771;
+}
+.working__inner-swiper {
+  max-width: 500px;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .working__inner-swiper {
+    max-width: 400px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .working__inner-swiper {
+    max-width: 250px;
+  }
 }
 .working__slide {
   display: -webkit-box;
@@ -1599,13 +1633,40 @@ body.lock {
   width: 500px;
   height: 500px;
 }
+@media screen and (max-width: 768px) {
+  .working__img {
+    width: 400px;
+    height: 400px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .working__img {
+    width: 250px;
+    height: 250px;
+  }
+}
 
 .working-swiper {
   width: 500px;
   height: 500px;
   border-radius: 50px;
 }
+@media screen and (max-width: 768px) {
+  .working-swiper {
+    width: 400px;
+    height: 400px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .working-swiper {
+    width: 250px;
+    height: 250px;
+  }
+}
 
+.swiper-button-prev {
+  left: -10%;
+}
 .swiper-button-prev::after {
   position: absolute;
   content: "";
@@ -1615,10 +1676,17 @@ body.lock {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  top: 120%;
-  left: 440%;
+}
+@media screen and (max-width: 576px) {
+  .swiper-button-prev::after {
+    width: 18px;
+    height: 38px;
+  }
 }
 
+.swiper-button-next {
+  right: -10%;
+}
 .swiper-button-next::after {
   position: absolute;
   content: "";
@@ -1628,8 +1696,12 @@ body.lock {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  top: 120%;
-  right: 440%;
+}
+@media screen and (max-width: 576px) {
+  .swiper-button-next::after {
+    width: 18px;
+    height: 38px;
+  }
 }
 
 .modal {
