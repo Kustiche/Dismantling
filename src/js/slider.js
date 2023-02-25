@@ -9,7 +9,23 @@ const workingSwiper = new Swiper('.working-swiper', {
 
   // Navigation arrows
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.working-swiper-button-next',
+    prevEl: '.working-swiper-button-prev',
+  },
+});
+
+const recallSwiper = new Swiper('.recall-swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  autoplay: {
+    delay: 5000,
+  },
+  spaceBetween: 10,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.recall-swiper-button-next',
+    prevEl: '.recall-swiper-button-prev',
   },
 });
