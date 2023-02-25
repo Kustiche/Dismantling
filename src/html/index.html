@@ -6,6 +6,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>РусМастер</title>
 		<link type="image/svg" href="favicons/favicon.svg" rel="icon" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+			rel="stylesheet"
+		/>
 		<link href="css/style.min.css" rel="stylesheet" />
 	</head>
 
@@ -16,8 +20,10 @@
 				@include('chunk/hero.html') @include('chunk/places.html')
 				@include('chunk/services.html') @include('chunk/order.html')
 				@include('chunk/steps.html') @include('chunk/benefit.html')
+				@include('chunk/working.html')
 			</main>
 			@include('chunk/footer.html') @include('../components/modal/modal.html')
+			<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 			<script src="js/scripts.min.js"></script>
 		</div>
 	</body>
