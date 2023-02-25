@@ -626,9 +626,9 @@ body.lock {
   transition: transform 0.4s, -webkit-transform 0.4s;
 }
 .header__social-link:hover {
-  -webkit-transform: scale(90%);
-      -ms-transform: scale(90%);
-          transform: scale(90%);
+  -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+          transform: scale(0.9);
 }
 .header__social-icon {
   width: 25px;
