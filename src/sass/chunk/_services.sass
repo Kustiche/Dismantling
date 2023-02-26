@@ -42,9 +42,9 @@
     @media screen and ( max-width: 992px )
       justify-content: space-around
     @media screen and ( max-width: 768px )
+      margin-bottom: 30px
       gap: 40px 10px
     @media screen and ( max-width: 576px )
-      margin-bottom: 30px
       gap: 20px 10px
 
   &__card
@@ -57,12 +57,13 @@
     box-shadow: 0px 2px 24px 4px rgba(0, 0, 0, 0.15)
     border-radius: 10px
     z-index: 1
-    @media screen and ( max-width: 576px )
-      max-width: 250px
+    @media screen and ( max-width: 768px )
       &--change
         display: none
       &.active
         display: flex
+    @media screen and ( max-width: 576px )
+      max-width: 250px
 
   &__img
     margin-bottom: 20px
@@ -100,7 +101,7 @@
 
   &__still
     display: none
-    @media screen and ( max-width: 576px )
+    @media screen and ( max-width: 768px )
       display: inline-block
       &.none
         display: none
