@@ -44,6 +44,7 @@
     @media screen and ( max-width: 768px )
       gap: 40px 10px
     @media screen and ( max-width: 576px )
+      margin-bottom: 30px
       gap: 20px 10px
 
   &__card
@@ -58,6 +59,10 @@
     z-index: 1
     @media screen and ( max-width: 576px )
       max-width: 250px
+      &--change
+        display: none
+      &.active
+        display: flex
 
   &__img
     margin-bottom: 20px
@@ -88,4 +93,14 @@
   &__button
     padding: 25px 107px
     @media screen and ( max-width: 576px )
-      padding: 25px 80px
+      margin: 0 auto
+      padding: 15px 40px
+      font-size: 13px
+      line-height: 19px
+
+  &__still
+    display: none
+    @media screen and ( max-width: 576px )
+      display: inline-block
+      &.none
+        display: none

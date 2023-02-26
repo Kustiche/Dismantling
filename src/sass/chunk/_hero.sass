@@ -32,6 +32,8 @@
     align-items: flex-start
     position: relative
     z-index: 2
+    @media screen and ( max-width: 576px )
+      align-items: center
 
   &__title
     margin: 0
@@ -39,6 +41,8 @@
     text-align: inherit
     @media screen and ( max-width: 768px )
       margin-bottom: 0
+    @media screen and ( max-width: 576px )
+      text-align: center
 
   &__subtitle
     margin: 0
@@ -62,6 +66,8 @@
       margin-bottom: 25px
       &::after
         top: 50px
+        left: 50%
+        transform: translateX(-50%)
 
   &__text
     margin: 0
@@ -73,6 +79,7 @@
     @media screen and ( max-width: 768px )
       margin-bottom: 20px
     @media screen and ( max-width: 576px )
+      text-align: center
       font-size: 19px
       line-height: 23px
 
