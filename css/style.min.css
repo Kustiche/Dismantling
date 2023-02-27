@@ -549,6 +549,11 @@ body.lock {
           align-items: center;
   gap: 20px;
 }
+@media screen and (max-width: 768px) {
+  .header__wrap {
+    gap: 50px;
+  }
+}
 .header__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -717,17 +722,29 @@ body.lock {
 }
 
 .logo {
-  max-width: 48px;
-  max-height: 39px;
+  max-width: 100px;
+  height: 100px;
 }
-.logo-img {
+@media screen and (max-width: 768px) {
+  .logo {
+    max-width: 70px;
+    height: 70px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .logo {
+    max-width: 60px;
+    height: 60px;
+  }
+}
+.logo__img {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .hero {
   position: relative;
-  padding-top: 140px;
+  padding-top: 190px;
   padding-bottom: 145px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.5))), url(../img/hero/hero-background.jpg);
   background-image: -o-linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../img/hero/hero-background.jpg);
@@ -751,13 +768,13 @@ body.lock {
 }
 @media screen and (max-width: 768px) {
   .hero {
-    padding-top: 110px;
+    padding-top: 150px;
     padding-bottom: 115px;
   }
 }
 @media screen and (max-width: 576px) {
   .hero {
-    padding-top: 100px;
+    padding-top: 120px;
     padding-bottom: 105px;
   }
 }
