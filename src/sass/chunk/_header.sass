@@ -10,6 +10,8 @@
     justify-content: space-between
     align-items: center
     gap: 20px
+    @media screen and ( max-width: 768px )
+      gap: 50px
 
   &__inner
     display: flex
@@ -106,9 +108,15 @@
       display: none
 
 .logo
-  max-width: 48px
-  max-height: 39px
+  max-width: 100px
+  height: 100px
+  @media screen and ( max-width: 768px )
+    max-width: 70px
+    height: 70px
+  @media screen and ( max-width: 576px )
+    max-width: 60px
+    height: 60px
 
-  &-img
+  &__img
     width: 100%
-    height: auto
+    height: 100%
