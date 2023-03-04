@@ -104,3 +104,25 @@
   @media screen and ( max-width: 576px )
     font-size: 32px
     line-height: 34px
+
+.number
+  font-size: 20px
+  line-height: 25px
+  position: relative
+  &::after
+    position: absolute
+    content: ""
+    width: 0
+    border-top: 2px solid $bronze-olive
+    top: 102%
+    left: 50%
+    transform: translateX(-50%)
+    transition: width .4s
+  &:hover
+    &::after
+      width: 100%
+  @media screen and ( max-width: 992px )
+    font-size: 16px
+    line-height: 22px
+  @media screen and ( max-width: 576px )
+    font-size: 13px
